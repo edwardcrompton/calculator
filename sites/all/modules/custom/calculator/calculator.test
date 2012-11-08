@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Test class for the calculator class
+ *
+ **/
+
+class CalculatorTestCase extends DrupalWebTestCase {
+ public static function getInfo() {
+    return array(
+     'name' => 'Test the Calculator class',
+     'description' => 'Test the add method.',
+     'group' => 'Calculator',
+    );
+ }
+
+ /**
+  * Test that the add method in the Calculator class works properly.
+  */
+ function testCalculatorAdd() {
+
+ }
+}
