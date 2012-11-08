@@ -1,0 +1,13 @@
+<?php 
+
+/**
+ * Calculator class for doing additions and maybe other stuff...
+ *
+ */
+class Calculator {
+  public function add ($a, $b) {
+    $c = $a + $b;
+    watchdog('calculator', t('A calculation was performed and the answer was: :calculation'), array(':calculation', $c));
+    return $c;
+  }
+}
