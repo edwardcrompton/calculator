@@ -8,7 +8,7 @@
 class CalculatorTestCase extends DrupalWebTestCase {
  public static function getInfo() {
     return array(
-     'name' => 'Test the Calculator class',
+     'name' => 'Calculator add',
      'description' => 'Test the add method.',
      'group' => 'Calculator',
     );
@@ -18,6 +18,6 @@ class CalculatorTestCase extends DrupalWebTestCase {
   * Test that the add method in the Calculator class works properly.
   */
  function testCalculatorAdd() {
-
+   $this->assertTrue(TRUE);
  }
 }
