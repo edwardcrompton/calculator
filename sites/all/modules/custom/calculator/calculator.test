@@ -19,7 +19,9 @@ class CalculatorBasicTestCase extends DrupalWebTestCase {
   /**
    * Test that the add method in the Calculator class works properly.
    */
-  function testCalculatorAdd() {
-    $this->assertTrue(TRUE);
+  public function testCalculatorAdd() {
+    $calc = new Calculator();
+    $sum = $calc->add(10, 9);
+    $this->assertEqual($sum, 19);
   }
 }
