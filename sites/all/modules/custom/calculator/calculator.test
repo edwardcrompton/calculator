@@ -2,22 +2,24 @@
 
 /**
  * Test class for the calculator class
- *
+ * The name of the test case matters. It should be of the form:
+ * [ModuleName][Description]TestCase
+ * The case used doesn't matter but it's good to follow a convention.
+ * 
  **/
-
-class CalculatorTestCase extends DrupalWebTestCase {
- public static function getInfo() {
+class CalculatorBasicTestCase extends DrupalWebTestCase {
+  public static function getInfo() {
     return array(
-     'name' => 'Calculator add',
-     'description' => 'Test the add method.',
-     'group' => 'Calculator',
+      'name' => 'Calculator Tests',
+      'description' => 'Tests for the calculator module',
+      'group' => 'Calculator',
     );
- }
+  }
 
- /**
-  * Test that the add method in the Calculator class works properly.
-  */
- function testCalculatorAdd() {
-   $this->assertTrue(TRUE);
- }
+  /**
+   * Test that the add method in the Calculator class works properly.
+   */
+  function testCalculatorAdd() {
+    $this->assertTrue(TRUE);
+  }
 }
