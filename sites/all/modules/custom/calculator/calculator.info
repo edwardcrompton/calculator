@@ -3,4 +3,3 @@ description = "Module for demonstrating automated testing at Drupal Camp PK"
 core = 7.x
 php = 5.3
 files[] = calculator.test
-@
